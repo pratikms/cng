@@ -15,10 +15,10 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", Greet)
 
-	log.Println("Starting server :8000")
+	log.Println("Starting server :8080")
 
 	s := &http.Server{
-		Addr:         ":8000",
+		Addr:         ":8080",
 		Handler:      mux,
 		ReadTimeout:  30 * time.Second,
 		WriteTimeout: 30 * time.Second,
